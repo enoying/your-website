@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promosi Produk Elegan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Promosi Produk Terbaru</h1>
+            <p>Temukan produk terbaik kami dengan harga spesial!</p>
+        </div>
+    </header>
+
+    <section class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="slide1.jpg" alt="Slide 1" style="width:100%">
+            <div class="text">Deskripsi Slide 1</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="slide2.jpg" alt="Slide 2" style="width:100%">
+            <div class="text">Deskripsi Slide 2</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="slide3.jpg" alt="Slide 3" style="width:100%">
+            <div class="text">Deskripsi Slide 3</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <section id="products" class="container">
+        <h2>Produk Kami</h2>
+        <div class="product" onclick="showProductDetails('Produk 1', 'Deskripsi singkat tentang Produk 1.')">
+            <img src="product1.jpg" alt="Produk 1">
+            <h3>Produk 1</h3>
+            <p>Deskripsi singkat tentang Produk 1.</p>
+            <button class="buy-btn">Lihat Detail</button>
+        </div>
+        <div class="product" onclick="showProductDetails('Produk 2', 'Deskripsi singkat tentang Produk 2.')">
+            <img src="product2.jpg" alt="Produk 2">
+            <h3>Produk 2</h3>
+            <p>Deskripsi singkat tentang Produk 2.</p>
+            <button class="buy-btn">Lihat Detail</button>
+        </div>
+        <!-- Tambahkan produk lain di sini -->
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Alamat Kami</h2>
+        <p>Jl. Contoh Alamat No. 123, Kota, Negara</p>
+        <p>Hubungi kami di: <a href="mailto:info@contohalamat.com">info@contohalamat.com</a></p>
+    </section>
+
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/yourphonenumber" target="_blank">
+            <img src="whatsapp-icon.png" alt="Chat with us on WhatsApp">
+        </a>
+    </div>
+
+    <footer class="container">
+        <p>&copy; 2024 Promosi Produk Elegan. All rights reserved.</p>
+    </footer>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalProductTitle"></h2>
+            <p id="modalProductDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
